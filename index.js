@@ -6,20 +6,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended:true,
 }));
-const books= [{
-    bookName: "Rudest Book Ever",
-    bookAuthor: "Shwetabh Gangwar",
-    bookPages: 200,
-    bookPrice: 240,
-    bookState: "Available"
-},
-{
-    bookName: "Do Epic things",
-    bookAuthor: "Ankur Wariko",
-    bookPages: 200,
-    bookPrice: 240,
-    bookState: "Available"
-}
+const books= [
 ]
 app.post("/", (req, res) => {
     //below we are setting a structure of how we are going to be getting values from the form
